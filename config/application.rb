@@ -19,7 +19,7 @@ module Skcc
       generator.test_framework :rspec, fixture: false
       generator.helper_specs false
       generator.view_specs false
-      generator.stylesheets false
+      generator.assets false
     end
   end
 end
