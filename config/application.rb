@@ -21,7 +21,6 @@ module Skcc
       generator.view_specs false
       generator.assets false
       generator.jbuilder false
-      generator.test_unit false
     end
   end
 end
