@@ -16,8 +16,9 @@ module Skcc
     # -- all .rb files in that directory are automatically loaded.
 
     config.generators do |generator|
-      generator.test_framework :rspec
+      generator.test_framework :rspec, fixture: false
       generator.helper_specs false
+      generator.view_specs false
     end
   end
 end
