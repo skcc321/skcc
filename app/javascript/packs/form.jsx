@@ -1,23 +1,33 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-class Test extends React.Component {
+class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.name = 'name';
+    this.state = {
+      name: 'James',
+      surname: 'Bond'
+    }
+
   }
 
   render() {
-    return (
-      <h1>this is {this.name}</h1>
+    return(
+      <div>
+        <h1 onMouseOver={this.onHover}>my name is {this.state.surname}!</h1>
+        <p>{this.state.name} {this.state.surname}</p>
+      </div>
     )
+  }
+
+  onHover = () => {
+    this.setState({name: 'Dude'})
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Test />,
+    <Form/>,
     document.body.appendChild(document.createElement('div'))
   )
 })
-
