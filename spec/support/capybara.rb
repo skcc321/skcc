@@ -1,6 +1,5 @@
 require 'capybara/rspec'
 require 'capybara/dsl'
-require 'capybara/poltergeist'
 require 'capybara-screenshot/rspec'
 
 Capybara.asset_host = 'http://localhost:3333'
