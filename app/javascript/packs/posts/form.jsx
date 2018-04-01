@@ -75,6 +75,6 @@ class PostForm extends React.Component {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <PostForm/>,
-    document.body.appendChild(document.createElement('div'))
+    document.body
   )
 })
